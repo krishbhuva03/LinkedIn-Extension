@@ -11,6 +11,7 @@
   "devDependencies": {
     "@types/chrome": "^0.0.270",
     "@types/node": "^20.0.0",
+    "autoprefixer": "^10.4.21",
     "css-loader": "^6.8.1",
     "mini-css-extract-plugin": "^2.7.6",
     "postcss": "^8.4.31",
