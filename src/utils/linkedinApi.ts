@@ -178,6 +178,10 @@ class LinkedInAPI {
   getQueueLength(): number {
     return this.requestQueue.getQueueLength();
   }
+
+  clearCache(): void {
+    CacheManager.clear();
+  }
 }
 
 export const linkedinApi = new LinkedInAPI();
