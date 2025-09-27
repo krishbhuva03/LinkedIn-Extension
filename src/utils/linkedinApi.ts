@@ -46,7 +46,7 @@ class LinkedInAPI {
     };
 
     if (this.csrfToken) {
-      headers['csrf-token'] = this.csrfToken;
+      (headers as any)['csrf-token'] = this.csrfToken;
     }
 
     const response = await fetch(url, {
