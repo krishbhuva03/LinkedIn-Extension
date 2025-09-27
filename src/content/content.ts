@@ -100,6 +100,22 @@ class LinkedInContentScript {
       }
     };
   }
+
+  private clearCache(): any {
+    try {
+      linkedinApi.clearCache();
+      return {
+        success: true,
+        message: 'Cache cleared successfully'
+      };
+    } catch (error) {
+      console.error('Failed to clear cache:', error);
+      return {
+        success: false,
+        error: error instanceof Error ? error.message : 'Unknown error'
+      };
+    }
+  }
 }
 
 // Initialize the content script
