@@ -33,12 +33,15 @@ module.exports = {
           loader: 'svelte-loader',
           options: {
             compilerOptions: {
-              dev: true
+              dev: process.env.NODE_ENV === 'development'
             },
             emitCss: true,
             hotReload: false,
             preprocess: require('svelte-preprocess')({
-              postcss: true
+              postcss: true,
+              typescript: {
+                tsconfigFile: './tsconfig.json'
+              }
             })
           }
         }
