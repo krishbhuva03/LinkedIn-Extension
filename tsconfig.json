@@ -16,6 +16,9 @@
   "include": [
     "src/**/*"
   ],
+  "files": [
+    "src/svelte.d.ts"
+  ],
   "exclude": [
     "node_modules",
     "dist"
