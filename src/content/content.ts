@@ -51,6 +51,9 @@ class LinkedInContentScript {
           queueLength: linkedinApi.getQueueLength()
         };
       
+      case 'clearCache':
+        return this.clearCache();
+      
       default:
         throw new Error(`Unknown action: ${request.action}`);
     }
