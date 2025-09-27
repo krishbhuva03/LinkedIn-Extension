@@ -17,7 +17,8 @@ module.exports = {
     alias: {
       svelte: path.dirname(require.resolve('svelte/package.json'))
     },
-    mainFields: ['svelte', 'browser', 'module', 'main']
+    mainFields: ['svelte', 'browser', 'module', 'main'],
+    conditionNames: ['svelte']
   },
   module: {
     rules: [
